@@ -1,0 +1,52 @@
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    z-index: 100;
+    border-right:  1px solid #444;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu-lateral ul li:hover {
+    background-color: #4CAF50;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+
+body {
+    margin-left: 200px; /* Espaço para o menu lateral */
+}
+
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 150px;
+    }
+
+    body {
+        margin-left: 150px;
+    }
+}
